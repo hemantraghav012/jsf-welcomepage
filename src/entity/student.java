@@ -38,8 +38,12 @@ public void setPassword(String password) {
 
 	public String  save()
 	{
+		if(name.equals("kaizen")&& password.equals("1234")){
+			return "success.xhtml";
+		}else{
 		
-	    return "success.xhtml";
+	    return "error.xhtml";
+		}
 	}
 	
 	
